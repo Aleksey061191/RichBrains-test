@@ -1,0 +1,132 @@
+.menu {
+    width: 286px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.06);
+    border-radius: 2px;
+    height: 785px;
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+    margin: 35px 0 19px 19px;
+}
+
+.menu__adaptive {
+    display: none;
+}
+
+.menu__title{
+    font-family: 'Roboto', serif;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #259609;
+    margin-left: 13px;
+}
+
+.menu__line {
+    width: 256px;
+    height: 2px;
+    background-color: #ECECEC;
+    margin: 6px auto;
+}
+
+.navigation__ul {
+    padding-left: 30px;
+}
+
+.navigation__item {
+    list-style: none;
+    font-family: 'Roboto', serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 19px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    width: 233px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        width: 200px;
+        margin: 0;
+    }
+}
+
+.navigation__item-last {
+    list-style: none;
+    font-family: 'Roboto', serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    width: 233px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #259609;
+    margin-bottom: 9px;
+}
+
+.navigation__item:hover, .item__navigation:active {
+    color: #259609;
+}
+
+.subnav__button {
+    text-align: start;
+    text-decoration: none;
+    border: none;
+    background: none;
+    width: 243px;
+    height: 46px;
+    border-radius: 3px;
+    color: #3E3E3E;
+    align-items: flex-end;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+    p {
+        margin-left: 5px;
+        font-family: 'Roboto', serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+.subnav__button:hover {
+    background: #F2F2F2;
+}
+
+.subnav__button:focus {
+    background: rgba(25, 96, 09, 0.15);
+    color: #259609;
+}
+
+.subnav__ul {
+    padding: 0;
+    color: #259609;
+}
+
+.subnav__item {
+    list-style: none;
+}
+
+.show__all {
+    margin: 20px 15px 29px 15px;
+    width: 256px;
+    height: 44px;
+    border-radius: 3px;
+    border: 1px solid #259609;
+    background: none;
+    p {
+        font-family: 'Roboto', serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #259609;
+        text-transform: uppercase;
+    }
+}

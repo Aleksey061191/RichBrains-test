@@ -1,0 +1,153 @@
+.colums {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 23px;
+}
+
+@media (max-width: 590px) {
+    .header {
+        text-align: center;
+    }
+    .colums {
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards {
+        justify-content: center;
+    }
+}
+
+.card {
+    width: 282px;
+    height: 405px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.06);
+    border-radius: 2px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+    position: relative;
+}
+
+@media (min-width: 361px) {
+    .card:hover {
+        .hover {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+    }
+}
+
+.card__rectangle {
+    width: 100%;
+    height: 6px;
+    background: #259609;
+    border-radius: 2px 2px 0px 0px;
+}
+
+.card__emblem {
+    display: flex;
+    justify-content: flex-end;
+    margin: 24px 30px 30px 0;
+}
+
+.card__add {
+    display: none;
+    border: none;
+    background: none;
+}
+
+.card__subheader {
+    font-family: 'Roboto', serif;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #259609;
+    margin: 0 0 0 30px;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 177px;
+    margin-top: 10px;
+}
+
+.card__info-header {
+    font-family: 'Roboto', serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #3E3E3E;
+    margin: 0 0 0 30px;
+}
+
+.card__info-list {
+    margin-left: 30px;
+}
+
+.card__info-list-media{
+    display: none;
+}
+
+.card__info-list-item {
+    display: flex;
+    align-items: center;
+    p {
+        font-family: 'Roboto', serif;
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0 0 0 13px;
+        color: #3E3E3E;
+    }
+}
+
+.first {
+    margin-bottom: 8px;
+}
+
+.second {
+    margin: 0 1.5px 0 2px;
+}
+
+.card__button {
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    width: 222px;
+    height: 44px;
+    margin: 30px;
+    background: #259609;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.more-programs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+    .more {
+        background: none;
+        border: none;
+        margin-left: 12px;
+    }
+    p {
+        font-family: 'Roboto', serif;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #3E3E3E;
+        margin: 0;
+    }
+}
